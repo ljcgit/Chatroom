@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN IN</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/css/admin.css">
+    <script language="JavaScript" src="__PUBLIC__/admin/js/admin_check.js"></script>
+</head>
+<body>
+<div class="admin_div" style="z-index:-1;">
+    <p>Login</p>
+    <form method="post" action="../../index/Admin/check" onSubmit="return InputCheck(this)">
+        <input type="text" name="id" id="username" placeholder="用户名"/><br>
+        <input type="password" name="password" id="password" placeholder="密码"/><br>
+        <input type="text" name="captcha" id="captcha"/><br>
+        <div class="captcha">{:captcha_img()}</div><br>
+        <input type="submit" value="sign me in" id="sub"/><span class="sub_a">若未注册请先<a href="../../index/Register/reg">注册</a>！</span><br>
+    </form>
+</div>
+<div id="container" style="z-index:2">
+    <div id="buttons">
+        <span index="1" class="on"></span>
+        <span index="2"></span>
+        <span index="3"></span>
+        <span index="4"></span>
+        <span index="5"></span>
+    </div>
+    <a href="#" id="prev" class="arrow">&lt;</a>
+    <a href="#" id="next" class="arrow">&gt;</a>
+</div>
+  <script language="JavaScript" src="__PUBLIC__/admin/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简易版聊天室</title>
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/index_style.css"/>
+    <script language="JavaScript" src="__PUBLIC__/assets/js/index_js.js"></script>
+</head>
+<body>
+    <div id="" class="mydiv">
+        <div class="list_view">
+            <div class="myimg" id="myimg"><image src="__PUBLIC__/assets/image/ma.jpg"></image></div>
+           <div class="myspan"><span id="sender" >{$username}</span></div><br/>
+            <p class="myp">聊天室好友</p>
+            <div class="user_list" id="user_list">
+
+            </div>
+            <input type="button" onclick="back_view()" value="返回主界面" class="backview"/>
+        </div>
+        <div class="view_right">
+            <div class="head_view">
+                <span id="cname">{$cname}</span>
+            </div>
+            <div class="chat_view" id="chat_view">
+            </div>
+            <div class="submit_view">
+                <form id="submit_msg" method="post">
+                    <select id="select_color" name="color" onchange="sblur()">
+                        <option value="#000000" >black</option>
+                        <option value="#008000">green</option>
+                        <option value="#C0C0C0">silver</option>
+                        <option value="#00FF00">lime</option>
+                        <option value="#808080">gray</option>
+                        <option value="#808000">olive</option>
+                        <option value="#FFFF00">yellow</option>
+                        <option value="#800000">maroon</option>
+                        <option value="#000080">navy</option>
+                        <option value="#FF0000">red</option>
+                        <option value="#0000FF">blue</option>
+                        <option value="#800080">purple</option>
+                        <option value="#008080">teal</option>
+                        <option value="#00FFFF">aqua</option>
+                    </select>
+                    <br/>
+                    <textarea name="message" id="tarea"></textarea>
+                    <input type="submit" value="发送">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

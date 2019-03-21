@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户界面</title>
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/index_style.css"/>
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/userview_style.css"/>
+    <script language="JavaScript" src="__PUBLIC__/assets/js/userview_js.js"></script>
+</head>
+<body>
+    <div class="mydiv">
+        <div class="list_view">
+            <div class="myimg" id="myimg"><image src="__PUBLIC__/assets/image/ma.jpg"  style="width: 80px;height:80px;"></image></div>
+            <div class="myspan"><span id="sender" >{$username}</span></div><br/>
+            <p class="myp">好友列表：</p>
+            <div class="user_list" id="user_list">
+
+            </div>
+            <div class="create_rooms" id="createrooms">
+                <form method="post" id="sub_newroom">
+                    <div>聊天室名称：</div><input type="text" name="cname"/><br>
+                    <input type="submit" value="创建" id="tb"/>
+                </form>
+            </div>
+            <input type="button" onclick="Create_room()" value="创建聊天室" class="backview" id="newroom"/>
+            <input type="button" onclick="Quit_admin()" value="退出登录" class="backview"/>
+        </div>
+        <div class="view_right">
+            <div class="room_create">
+                <div><span>我创建的聊天室</span></div>
+                <div id="create_list"></div>
+            </div>
+            <div class="room_add">
+                <div><span>我加入的聊天室</span></div>
+                <div id="add_list"></div>
+            </div>
+            <div class="room_sub">
+                <div><span>我未加入的聊天室</span></div>
+                <div id="sub_list"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

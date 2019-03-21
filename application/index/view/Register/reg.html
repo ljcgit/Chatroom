@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register IN</title>
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/admin.css">
+    <script language="JavaScript" src="__PUBLIC__/admin/js/admin_check.js"></script>
+</head>
+<body>
+<div class="admin_div">
+    <p>Register</p>
+    <form method="post" action="../../index/Register/check" onsubmit="return InputCheck(this)">
+        <input type="text" name="id" id="username" placeholder="用户名" /><br>
+        <input type="password" name="password" id="password" placeholder="密码"/><br>
+        <input type="password" name="password" id="spassword" placeholder="确认密码" onblur="checkpass(this)"/><span id="msgcheck" class="sub_a"></span><br>
+        <input type="text" name="captcha" id="captcha"/><br>
+        <div class="captcha">{:captcha_img()}</div><br>
+        <input type="submit" value="sign me in" id="sub"/><span class="sub_a">已有账号？直接<a href="../../index/Admin/admin">登录</a></span><br>
+    </form>
+</div>
+</body>
+</html>
